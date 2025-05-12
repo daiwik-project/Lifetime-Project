@@ -1,0 +1,129 @@
+:root {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --color-background: #080c0c;
+    --color-text: #faf9fa;
+    --color-primary: #e5aa84;
+    --color-secondary: #59abe6;
+    --color-accent-1: #ecdf58;
+    --color-accent-2: #fbb3ea;
+    --color-accent-3: #c73d16;
+    --color-card-1: #5f514e;
+    --color-card-2: #1f293f;
+    --color-card-3: #34543c;
+    --color-card-4: #909fea;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent-3));
+    color: var(--color-text);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(229, 170, 132, 0.3);
+}
+
+.section {
+    padding: 6rem 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    opacity: 0.8;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent-3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,9 @@
+discussforms   //Disforms.vue
+Q&a hub  //QandA.vue
+model shows case   // our new modelwhich is similar to chatgpt page // ournewgpt.vue
+user management //usermanagment.vue
+select model and mderate the conctent //contentmoderator.vue
+performance analytics // pa.vue
+server management (with bandwidth management system + other technalcal machine management systems) //sms.vue
+Admin management system  // amsLayout.vue
+
